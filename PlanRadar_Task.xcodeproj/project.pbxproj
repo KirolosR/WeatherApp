@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		489690DB2EA96D04003E018E /* LoaderUI in Frameworks */ = {isa = PBXBuildFile; productRef = 489690DA2EA96D04003E018E /* LoaderUI */; };
+		489690DE2EA96D3F003E018E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 489690DD2EA96D3F003E018E /* Kingfisher */; };
+		489690E52EA96DF5003E018E /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 489690E42EA96DF5003E018E /* NVActivityIndicatorView */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4843A5782EA7DADC00C1C053 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				489690DE2EA96D3F003E018E /* Kingfisher in Frameworks */,
+				489690DB2EA96D04003E018E /* LoaderUI in Frameworks */,
+				489690E52EA96DF5003E018E /* NVActivityIndicatorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +121,9 @@
 			);
 			name = PlanRadar_Task;
 			packageProductDependencies = (
+				489690DA2EA96D04003E018E /* LoaderUI */,
+				489690DD2EA96D3F003E018E /* Kingfisher */,
+				489690E42EA96DF5003E018E /* NVActivityIndicatorView */,
 			);
 			productName = PlanRadar_Task;
 			productReference = 4843A5642EA7DADB00C1C053 /* PlanRadar_Task.app */;
@@ -175,6 +187,7 @@
 				TargetAttributes = {
 					4843A5632EA7DADB00C1C053 = {
 						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
 					};
 					4843A5762EA7DADC00C1C053 = {
 						CreatedOnToolsVersion = 16.4;
@@ -195,6 +208,11 @@
 			);
 			mainGroup = 4843A55B2EA7DADB00C1C053;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				489690D92EA96D04003E018E /* XCRemoteSwiftPackageReference "LoaderUI" */,
+				489690DC2EA96D3F003E018E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				489690E32EA96DF5003E018E /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4843A5652EA7DADB00C1C053 /* Products */;
 			projectDirPath = "";
@@ -388,9 +406,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = PlanRadar_Task/PlanRadar_Task.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -410,10 +430,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.PlanRadar-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.5;
@@ -425,9 +448,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = PlanRadar_Task/PlanRadar_Task.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -447,10 +472,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.PlanRadar-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.5;
@@ -583,6 +610,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		489690D92EA96D04003E018E /* XCRemoteSwiftPackageReference "LoaderUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/LoaderUI";
+			requirement = {
+				kind = exactVersion;
+				version = 0.2.1;
+			};
+		};
+		489690DC2EA96D3F003E018E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = exactVersion;
+				version = 7.12.0;
+			};
+		};
+		489690E32EA96DF5003E018E /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
+			requirement = {
+				kind = exactVersion;
+				version = 5.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		489690DA2EA96D04003E018E /* LoaderUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 489690D92EA96D04003E018E /* XCRemoteSwiftPackageReference "LoaderUI" */;
+			productName = LoaderUI;
+		};
+		489690DD2EA96D3F003E018E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 489690DC2EA96D3F003E018E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		489690E42EA96DF5003E018E /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 489690E32EA96DF5003E018E /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4843A55C2EA7DADB00C1C053 /* Project object */;
 }
